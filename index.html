@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="vraag">
+  <h1>BMI Calculator</h1><br>
+  <form>
+  			<label>Man </label><input type="radio" name="geslacht" value="Man"><br><br>
+  			<label>Vrouw </label><input type="radio" name="geslacht" value="Vrouw"><br><br>
+
+  		</form>
+      <div class="input">
+<br>
+      			<label>Gewicht: </label><input pattern="[0-9]" required autocomplete="off" type="number" min="1" max="999" id="gewicht">Kg<br>
+<br>
+      			<label>Lengte: </label><input pattern="[0-9]" required autocomplete="off" type="number" min="1" max="500" id="lengte">Cm<br>
+      		</div>
+  <br>
+
+  <input type="button" value="Bereken" id="bereken"><br>
+  </div>
+  <div id="resultaat"></div>
+    <script src="script.js"></script>
+</body>
+</html>
